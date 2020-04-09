@@ -1,0 +1,72 @@
+.Background {
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    transition: all .3s ease;
+}
+
+.ModalContainer {
+    min-height: 380px;
+    width: 300px;
+    background-color: #b67623;
+    color: white;
+    z-index: 12;
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Input {
+    background-color: #c9995c;
+    border: none;
+    border-radius: 45px;
+    height: 50px;
+    width: 250px;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.InputContainer {
+    position: relative;
+}
+
+.LoginButton {
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 45px;
+    height: 50px;
+    width: 250px;
+    color: white;
+    font-size: 20px;
+    transition: all .3s ease;
+}
+.LoginButton:hover {
+    background-color: white;
+    color: #b67623;
+}
+.ActiveLabel {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: all .3s ease;
+    font-size: 20px;
+}
+.Input:focus + .ActiveLabel,
+.Input:valid + .ActiveLabel {
+    top: -25px;
+    left: 0px;
+    right: 65%;
+}

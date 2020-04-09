@@ -1,0 +1,90 @@
+.ActionContainer {
+    min-height: calc(100vh - 60px);
+    margin: 0;
+    background: url('/home-bg.png') center;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.ActionContainer h1 {
+    font-size: 45px;
+    margin-top: -20px;
+}
+.StartButton {
+    border: 3px solid white;
+    color: white;
+    font-size: 30px;
+    background-color: transparent;
+    border-radius: 40px;
+    height: 60px;
+    width: 250px;
+    margin-bottom: 20px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.StartButton:hover {
+    color: #b67623;
+    background-color: white;
+}
+.BrowseAllButton {
+    border: none;
+    color: white;
+    font-size: 30px;
+    background-color: #b67623;
+    border-radius: 40px;
+    height: 60px;
+    width: 250px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.BrowseAllButton:hover {
+    background-color: #c87100;
+}
+.InfoContainer {
+    background-color: #c87100;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+.InfoContainer > div {
+    max-width: 600px;
+}
+.InfoContainer h1 {
+    font-size: 45px;
+}
+.InfoContainer p {
+    font-size: 22px;
+}
+.InfoContainer > img {
+    max-height: 200px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.InfoContainerOneRow {
+    background-color: #c87100;
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+.InfoContainerOneRow > div {
+    max-width: 650px;
+}
+.InfoContainerOneRow h1 {
+    font-size: 45px;
+}
+.InfoContainerOneRow p {
+    font-size: 22px;
+}

@@ -1,0 +1,16 @@
+.Container {
+    width: 200px;
+    margin: 20px;
+    
+}
+.InnerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.Image {
+    max-height: 25px;
+    margin: 7px;
+    margin-left: 13px
+}

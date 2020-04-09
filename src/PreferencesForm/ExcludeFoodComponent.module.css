@@ -1,0 +1,101 @@
+.Container {
+    background-color: #b67623;
+    color: white;
+    min-height: calc(100vh - 120px);
+    padding: 30px;
+    margin: 0;
+    font-weight: 200;
+}
+.AlergiesContainer {
+    min-height: 100px;
+    width: 400px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.excludedIngredient {
+    position: relative;
+    border: 2px solid white;
+    padding: 5px 25px 5px 10px;
+    margin-right: 7px;
+    margin-bottom: 3px;
+    border-radius: 5px
+}
+.deleteIngredient {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.TextInput {
+    width: 400px;
+    height: 50px;
+    background-color: #c9995c;
+    border: 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.TextInputContainer {
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+.TextInput ~ label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 13px;
+    height: 20px;
+    pointer-events: none;
+    transition: all .3s ease;
+}
+.TextInput:focus ~ label {
+    top: -25px;
+    right: 55%;
+}
+
+.TextInput.active ~ label {
+    background-color: red;
+}
+
+.sugestionContainer {
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9995c;
+    height: 50px;
+    width: 400px;
+    margin: 0 auto;
+    transition: all .3s ease;
+}
+.sugestionContainer:hover {
+    background-color: #c3883d;
+}
+.CancelButton {
+    width: 150px;
+    height: 45px;
+    border-radius: 35px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    margin: 10px;
+}
+.NextButton {
+  width: 150px;
+  height: 45px;
+  border-radius: 35px;
+  background-color: white;
+  color: #b67623;
+  border: none;
+  margin: 10px;
+}
+.ButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}

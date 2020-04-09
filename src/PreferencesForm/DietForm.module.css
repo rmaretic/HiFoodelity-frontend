@@ -1,0 +1,106 @@
+.Container {
+    background-color: #b67623;
+    color: white;
+    min-height: calc(100vh - 120px);
+    padding: 30px;
+    margin: 0;
+    font-weight: 200;
+}
+/* The container */
+.RadioContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .RadioContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .Checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .RadioContainer:hover input ~ .Checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .RadioContainer input:checked ~ .Checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .Checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .RadioContainer input:checked ~ .Checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .RadioContainer .Checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+  .Form {
+      width: 200px;
+      margin: 0 auto;
+  }
+
+  .DietDescription {
+    padding-left: 30px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    width: 300px;
+  }
+  .CancelButton {
+      width: 150px;
+      height: 45px;
+      border-radius: 35px;
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+      margin: 10px;
+  }
+  .NextButton {
+    width: 150px;
+    height: 45px;
+    border-radius: 35px;
+    background-color: white;
+    color: #b67623;
+    border: none;
+    margin: 10px;
+  }
+  .ButtonContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }

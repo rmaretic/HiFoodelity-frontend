@@ -1,0 +1,51 @@
+.Container {
+    min-height: calc(100vh - 60px);
+    width: 100%;
+    background-color: #b67623;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Container h1 {
+    margin: 0;
+    padding: 20px;
+}
+.Input {
+    background-color: #c9995c;
+    border: none;
+    border-radius: 45px;
+    height: 50px;
+    width: 300px;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.InputContainer {
+    position: relative;
+}
+.ActiveLabel {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: all .3s ease;
+    font-size: 20px;
+}
+.Input:focus + .ActiveLabel,
+.Input:valid + .ActiveLabel{
+    top: -25px;
+    left: 0px;
+    right: 65%;
+}
+.RegisterButton {
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border-radius: 45px;
+    height: 50px;
+    width: 300px;
+}
